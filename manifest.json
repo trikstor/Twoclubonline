@@ -1,0 +1,27 @@
+{
+  "name": "Клуб Двоечников Онлайн",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "description": "Будьте всегда в клубе! Уведомления и отслеживание вопросов с этим расширением.",
+  "icons": {
+	"16" : "16.png",
+    "48" : "48.png",
+    "128": "128.png"
+  },
+  "permissions": [
+		"https://twoclub.ru/",
+		"storage",
+		"notifications"
+	],
+	"web_accessible_resources": [
+    "48.png"
+  ],
+   "background": {
+    "scripts": ["background.js"]
+  },
+"browser_action": {
+        "default_title": "Клуб Двоечников Онлайн",
+        "default_icon" : "128.png",
+        "default_popup": "popup.html"
+		}
+}
